@@ -1,12 +1,15 @@
 JavaScript Coding Standards
-
 =====================
 
 JavaScript Coding Standards you must conform to when writing JavaScript in CloudNatvePractice projects.
 
 ## Table of contents
 
-[TOC]
+- [Source file basics](#1-source-file-basics)
+- [Formatting](#2-formatting)
+- [Language features](#3-language-features)
+- [Naming](#4-naming)
+- [JSDoc](#5-jsdoc )
 
 ## 1 Source file basics
 
@@ -419,7 +422,7 @@ Parentheses are required for type casts: `/** @type {!Foo} */ (foo)`.
 
 ### 2.8 Comments 
 
-This section addresses *implementation comments*. JSDoc is addressed separately in [7 JSDoc](https://google.github.io/styleguide/jsguide.html#jsdoc).
+This section addresses *implementation comments*. JSDoc is addressed separately in [4 JSDoc](#4 JSDoc).
 
 #### 2.8.1 Block comment style 
 
@@ -1150,7 +1153,7 @@ Never modify builtin types, either by adding methods to their constructors or to
 
 Do not add symbols to the global object unless absolutely necessary (e.g. required by a third-party API).
 
-## 4 Naming 
+## 4 Naming
 
 ### 4.1 Rules common to all identifiers 
 
@@ -1292,7 +1295,7 @@ Examples:
 
 Note: Some words are ambiguously hyphenated in the English language: for example nonempty and non-empty are both correct, so the method names checkNonempty and checkNonEmpty are likewise both correct.
 
-## 5 JSDoc 
+## 5 JSDoc
 
 JSDoc is used on all classes, fields, and methods.
 
