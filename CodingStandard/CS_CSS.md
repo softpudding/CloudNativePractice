@@ -10,9 +10,9 @@ CSS Coding Standards
  - [Selectors](#Selectors)
  - [Properties](#Properties)
  - [Values](#Values)
- - [Media Queries](#Media Queries)
+ - [Media Queries](#Media-Queries)
  - [Commenting](#Commenting) 
- - [Tips for above's practices](#Tips for above's practices)
+ - [Tips for practicing above](#Tips-for-practicing-above)
  - [References](#References)
  
 ## Structure
@@ -196,7 +196,7 @@ For inline:
 }
 ~~~
 
-## Tips for above's practices
+## Tips for practicing above
 
 Stylesheets tend to get long in length. Focus slowly gets lost whilst intended goals start repeating and overlapping. Writing smart code from the outset helps us retain the overview whilst remaining flexible throughout change.
 
