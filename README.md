@@ -5,7 +5,7 @@
 ### Coding Standard
 [HTML coding standard](CodingStandard/CS_HTML.md)
 
-[JS coding standard](CodingStandard/CS_JS.md)
+[JS coding standard](CodingStandard/CS_JavaScript.md)
 ### Our Tech Stack
 Vue.js
 Java
