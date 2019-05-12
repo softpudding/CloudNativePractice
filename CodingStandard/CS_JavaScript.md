@@ -9,7 +9,7 @@ JavaScript Coding Standards you must conform to when writing JavaScript in Cloud
 - [Formatting](#2-formatting)
 - [Language features](#3-language-features)
 - [Naming](#4-naming)
-- [JSDoc](#5-jsdoc )
+- [JSDoc](#5-jsdoc)
 
 ## 1 Source file basics
 
@@ -143,7 +143,7 @@ Other combinations are allowed, particularly when emphasizing semantic groupings
 
 #### 2.2.2 Object literals: optionally block-like
 
-Any object literal may optionally be formatted as if it were a “block-like construct.” The same examples apply as [2.2.1 Array literals: optionally block-like](#2.2.1 Array literals: optionally block-like). For example, the following are all valid (**not** an exhaustive list):
+Any object literal may optionally be formatted as if it were a “block-like construct.” The same examples apply as [2.2.1 Array literals: optionally block-like](#2.2.1-array-literals:-optionally-block-like). For example, the following are all valid (**not** an exhaustive list):
 
 ```js
 const a = {
@@ -259,7 +259,7 @@ Every statement must be terminated with a semicolon. Relying on automatic semico
 
 ### 2.4 Column limit: 100
 
-JavaScript code has a column limit of 80 characters. Except as noted below, any line that would exceed this limit must be line-wrapped, as explained in [2.5 Line-wrapping](#2.5 line-wrapping).
+JavaScript code has a column limit of 80 characters. Except as noted below, any line that would exceed this limit must be line-wrapped, as explained in [2.5 Line-wrapping](#2.5-line-wrapping).
 
 **Exceptions:**
 
@@ -311,7 +311,7 @@ When line-wrapping, each line after the first (each *continuation line*) is inde
 
 When there are multiple continuation lines, indentation may be varied beyond +4 as appropriate. In general, continuation lines at a deeper syntactic level are indented by larger multiples of 4, and two lines use the same indentation level if and only if they begin with syntactically parallel elements.
 
-[2.6.3 Horizontal alignment: discouraged](#2.6.3 Horizontal alignment: discouraged) addresses the discouraged practice of using a variable number of spaces to align certain tokens with previous lines.
+[2.6.3 Horizontal alignment: discouraged](#2.6.3-horizontal-alignment:-discouraged) addresses the discouraged practice of using a variable number of spaces to align certain tokens with previous lines.
 
 ### 2.6 Whitespace 
 
@@ -422,7 +422,7 @@ Parentheses are required for type casts: `/** @type {!Foo} */ (foo)`.
 
 ### 2.8 Comments 
 
-This section addresses *implementation comments*. JSDoc is addressed separately in [4 JSDoc](#4 JSDoc).
+This section addresses *implementation comments*. JSDoc is addressed separately in [4 JSDoc](#4-jsdoc).
 
 #### 2.8.1 Block comment style 
 
@@ -798,11 +798,11 @@ Defining constructor prototype hierarchies correctly is harder than it first app
 
 #### 3.4.6 Do not manipulate `prototype`s directly 
 
-The `class` keyword allows clearer and more readable class definitions than defining `prototype` properties. Ordinary implementation code has no business manipulating these objects, though they are still useful for defining `@record` interfaces and classes as defined in [3.4.5 Old-style class declarations](#3.4.5 Old-style class declarations). Mixins and modifying the prototypes of builtin objects are explicitly forbidden.
+The `class` keyword allows clearer and more readable class definitions than defining `prototype` properties. Ordinary implementation code has no business manipulating these objects, though they are still useful for defining `@record` interfaces and classes as defined in [3.4.5 Old-style class declarations](#3.4.5-old-style-class-declarations). Mixins and modifying the prototypes of builtin objects are explicitly forbidden.
 
 **Exception**: Framework code (such as Polymer, or Angular) may need to use `prototype`s, and should not resort to even-worse workarounds to avoid doing so.
 
-**Exception**: Defining fields in interfaces (see [3.4.9 Interfaces](#3.4.9 Interfaces)).
+**Exception**: Defining fields in interfaces (see [3.4.9 Interfaces](#3.4.9-interfaces)).
 
 #### 3.4.7 Getters and Setters 
 
@@ -887,7 +887,7 @@ Functions may contain nested function definitions. If it is useful to give the f
 
 #### 3.5.3 Arrow functions 
 
-Arrow functions provide a concise syntax and fix a number of difficulties with `this`. Prefer arrow functions over the `function` keyword, particularly for nested functions (but see [3.3.5 Method shorthand](#3.3.5 Method shorthand)).
+Arrow functions provide a concise syntax and fix a number of difficulties with `this`. Prefer arrow functions over the `function` keyword, particularly for nested functions (but see [3.3.5 Method shorthand](#3.3.5-method-shorthand)).
 
 Prefer using arrow functions over `f.bind(this)`, and especially over `goog.bind(f, this)`. Avoid writing `const self = this`. Arrow functions are particularly useful for callbacks, which sometimes pass unexpected additional arguments.
 
@@ -943,7 +943,7 @@ Example:
 function maybeDoSomething(required, optional = '', node = undefined) {}
 ```
 
-Use default parameters sparingly. Prefer destructuring (as in [3.3.7 Destructuring](#3.3.7 Destructuring)) to create readable APIs when there are more than a small handful of optional parameters that do not have a natural order.
+Use default parameters sparingly. Prefer destructuring (as in [3.3.7 Destructuring](#3.3.7-destructuring)) to create readable APIs when there are more than a small handful of optional parameters that do not have a natural order.
 
 Note: Unlike Python's default parameters, it is okay to use initializers that return new mutable objects (such as `{}` or `[]`) because the initializer is evaluated each time the default value is used, so a single object won't be shared across invocations.
 
@@ -1040,7 +1040,7 @@ Numbers may be specified in decimal, hex, octal, or binary. Use exactly `0x`, `0
 
 With ES6, the language now has three different kinds of `for` loops. All may be used, though `for`-`of` loops should be preferred when possible.
 
-`for`-`in` loops may only be used on dict-style objects (see [3.3.3 Do not mix quoted and unquoted keys](#3.3.3 Do not mix quoted and unquoted keys)), and should not be used to iterate over an array.`Object.prototype.hasOwnProperty` should be used in `for`-`in` loops to exclude unwanted prototype properties. Prefer `for`-`of` and `Object.keys` over `for`-`in` when possible.
+`for`-`in` loops may only be used on dict-style objects (see [3.3.3 Do not mix quoted and unquoted keys](#3.3.3-do-not-mix-quoted-and-unquoted-keys)), and should not be used to iterate over an array.`Object.prototype.hasOwnProperty` should be used in `for`-`in` loops to exclude unwanted prototype properties. Prefer `for`-`of` and `Object.keys` over `for`-`in` when possible.
 
 #### 3.8.2 Exceptions 
 
@@ -1357,7 +1357,7 @@ Instead, write a Markdown list:
 
 ### 5.3 JSDoc tags 
 
-Google style allows a subset of JSDoc tags. See [5.1 JSDoc tag reference](#5.1 JSDoc tag reference) for the complete list. Most tags must occupy their own line, with the tag at the beginning of the line.
+Google style allows a subset of JSDoc tags. See [5.1 JSDoc tag reference](#5.1-jsdoc-tag-reference) for the complete list. Most tags must occupy their own line, with the tag at the beginning of the line.
 
 Illegal:
 
