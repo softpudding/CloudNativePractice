@@ -2,7 +2,7 @@ kind: pipeline
 name: default
 steps:
   - name: testAndBuild
-    image: openjdk,maven
+    image: openjdk
     commands:
       - mvnw clean package
     when:
