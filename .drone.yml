@@ -5,11 +5,11 @@ steps:
     image: openjdk
     image: maven
     commands:
-      - cd test_ci
+      - cd wordladder
       - mvn test
   - name: build
     image: openjdk
     image: maven
     commands:
-      - cd test_ci
+      - cd wordladder
       - mvn clean package
