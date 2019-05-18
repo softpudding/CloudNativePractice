@@ -1,5 +1,8 @@
 kind: pipeline
 name: default
+platfrom: 
+  os: linux
+  arch: amd64
 steps:
   - name: test
     image: openjdk
