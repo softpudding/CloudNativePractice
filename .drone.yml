@@ -20,3 +20,5 @@ steps:
       - mvn clean package
     when:
       event: push
+
+      
