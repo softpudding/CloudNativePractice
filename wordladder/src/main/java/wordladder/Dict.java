@@ -18,7 +18,7 @@ public class Dict {
             BufferedReader reader = new BufferedReader(in);
             String word;
             while ((word = reader.readLine()) != null){
-                dictionary.addElement(word);
+                dictionary.addElement(word); 
             }
             reader.close();
         } catch (IOException ex) {
