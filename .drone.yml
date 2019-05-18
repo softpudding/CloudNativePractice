@@ -1,7 +1,7 @@
 kind: pipeline
 name: default
 workspace:
-  base: 
+  base: /java
   path: src/github.com/CloudNativePractice
 steps:
   - name: testAndBuild
