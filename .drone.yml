@@ -8,3 +8,8 @@ steps:
     image: openjdk,maven
     commands:
       - mvnw clean package
+    when:
+      branch:
+      - tryDrone
+      event:
+      - push
