@@ -5,7 +5,7 @@ steps:
     image: openjdk
     image: maven
     commands:
-      - mvnw clean package
+      - mvn clean package
     when:
       branch:
       - tryDrone
