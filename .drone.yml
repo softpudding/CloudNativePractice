@@ -1,0 +1,15 @@
+kind: pipeline
+name: default
+steps:
+  - name: test
+    image: openjdk
+    image: maven
+    commands:
+      - cd wordladder
+      - mvn test
+  - name: build
+    image: openjdk
+    image: maven
+    commands:
+      - cd wordladder
+      - mvn clean package
