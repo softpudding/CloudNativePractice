@@ -3,6 +3,7 @@ name: default
 steps:
   - name: testAndBuild
     image: openjdk
+    image: maven
     commands:
       - mvnw clean package
     when:
