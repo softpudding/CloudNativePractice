@@ -33,7 +33,7 @@ public class ActuatorTest {
         mockMvc
                 .perform(MockMvcRequestBuilders.get("/actuator/info"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
-                .andDo(MockMvcResultHandlers.print())
+                //.andDo(MockMvcResultHandlers.print())
                 .andReturn();
     }
     @Test
@@ -41,7 +41,7 @@ public class ActuatorTest {
         mockMvc
                 .perform(MockMvcRequestBuilders.get("/actuator/health"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
-                .andDo(MockMvcResultHandlers.print())
+                //.andDo(MockMvcResultHandlers.print())
                 .andReturn();
     }
     @Test
@@ -49,7 +49,7 @@ public class ActuatorTest {
         mockMvc
                 .perform(MockMvcRequestBuilders.get("/actuator/shutdown"))
                 .andExpect(MockMvcResultMatchers.status().isNotFound())
-                .andDo(MockMvcResultHandlers.print())
+                //.andDo(MockMvcResultHandlers.print())
                 .andReturn();
     }
 }
