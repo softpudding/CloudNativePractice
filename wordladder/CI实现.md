@@ -66,7 +66,7 @@ steps:
 ### 3. 失败尝试
 在完成Sample前有一些有普遍参考价值的失败原因，以下是我们组在尝试过程中遇到过情况：
 #### 3.1 测试失败
-由于测试失败会出现无法pull的情况，图示如下：
+由于测试失败会收到daemon的Error response，无法进行pull request，图示如下：
 ![1](2.jpg)
 
 #### 3.2 缺失run drone/agent

@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 
 public class LadderTest {
     Dict dict = new Dict();
-    Ladder ladder = new Ladder("code1","data",dict);
+    Ladder ladder = new Ladder("code","data",dict);
     Ladder nladder = new Ladder("happy","apple",dict);
     @Test
     public void getLadder() {
@@ -21,7 +21,7 @@ public class LadderTest {
     @Test
     public void getNeighbors() {
         TreeSet<String> neighbors = new TreeSet();
-        ladder.getNeighbors("apple1",neighbors,dict);
+        ladder.getNeighbors("apple",neighbors,dict);
         assertEquals(0,neighbors.size());
         //assertTrue(neighbors.contains("apply"));
         assertFalse(neighbors.contains("apple"));
