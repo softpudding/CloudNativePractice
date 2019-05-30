@@ -17,7 +17,7 @@ steps:
       - mvn clean package
     when:
       event: push
-  - name: test
+  - name: gateway
     image: openjdk
     image: maven
     commands:
