@@ -17,11 +17,11 @@ steps:
       - mvn clean package
     when:
       event: push
-  - name: gateway
+  - name: test
     image: openjdk
-    imgae: maven
+    image: maven
     commands:
-     - cd Gateway
-     - mvn clean package
-     when: 
+      - cd Gateway  
+      - mvn clean package
+    when: 
       event: push
