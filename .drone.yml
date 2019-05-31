@@ -1,0 +1,27 @@
+kind: pipeline
+name: default
+steps:
+  - name: test
+    image: openjdk
+    image: maven
+    commands:
+      - cd wordladder
+      - mvn test
+    when: 
+      event: push
+  - name: build
+    image: openjdk
+    image: maven
+    commands:
+      - cd wordladder
+      - mvn clean package
+    when:
+      event: push
+  - name: gateway
+    image: openjdk
+    image: maven
+    commands:
+      - cd Gateway  
+      - mvn clean package
+    when: 
+      event: push
