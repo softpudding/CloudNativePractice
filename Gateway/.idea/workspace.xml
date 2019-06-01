@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5b28820-a7ae-4420-9b6c-ee5a03a4fe9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Feign/src/main/java/com/wordladder/feign/FeignController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Feign/src/main/java/com/wordladder/feign/FeignService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gateway/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gateway/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gateway/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gateway/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gateway/UriConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gateway/UriConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Gateway.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordladder/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder/src/main/java/wordladder/LadderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../wordladder/src/main/java/wordladder/LadderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder/src/main/java/wordladder/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Feign/src/main/java/com/wordladder/feign/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder/src/main/java/wordladder/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Feign/src/main/java/com/wordladder/feign/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Feign/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Feign/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder/src/main/resources/templates/wordladder.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Feign/src/main/resources/templates/wordladder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder/src/test/java/wordladder/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Feign/src/test/java/com/wordladder/feign/ControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder/src/test/java/wordladder/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Feign/src/test/java/com/wordladder/feign/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder/wordladder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordladder/wordladder.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
