@@ -35,4 +35,5 @@ public class WordLadderGatewayTest {
                 .expectBody()
                 .jsonPath("$.headers.Router").isEqualTo("WordLadder-Gateway");
 
+    }
 }
