@@ -63,7 +63,7 @@ public class Application {
 @ConfigurationProperties
 class UriConfiguration {
 
-    private String wordladderService = "http://localhost:9000";
+    private String wordladderService = "http://localhost:8083";
 
     public String getWordladderService() {
         return wordladderService;

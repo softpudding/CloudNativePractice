@@ -9,6 +9,14 @@ steps:
       - mvn test
     when: 
       event: push
+  - name: test feign
+    image: openjdk
+    image: maven
+    commands:
+      - cd Feign  
+      - mvn test
+    when: 
+      event: push
   - name: build
     image: openjdk
     image: maven
@@ -25,3 +33,4 @@ steps:
       - mvn clean package
     when: 
       event: push
+  

@@ -14,7 +14,7 @@ public class LadderController {
         }
         else {
             Ladder ladder = new Ladder(begin, end, dict);
-            return ladder.getResult();
+            return ladder.getResult()+" 1";
         }
     }
 }

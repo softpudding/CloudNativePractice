@@ -1,4 +1,4 @@
-package wordladder;
+package com.wordladder.feign;
 
 import org.junit.Before;
 import org.junit.Test;
