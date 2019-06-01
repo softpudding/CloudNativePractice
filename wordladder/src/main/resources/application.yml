@@ -1,8 +1,0 @@
-cloud:
- config:
-  uri: http://127.0.0.1:8888
-profile: dev
-  label: testing
-    name: wordladder
-      password: 666666
-       username: user
