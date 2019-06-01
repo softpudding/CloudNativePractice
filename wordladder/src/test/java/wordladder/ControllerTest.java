@@ -40,16 +40,16 @@ public class ControllerTest {
     @Test
     public void test1() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/home"))
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andDo(MockMvcResultHandlers.print());
+                .andExpect(MockMvcResultMatchers.status().isOk());
+                //.andDo(MockMvcResultHandlers.print());
         mvc.perform(MockMvcRequestBuilders.get("/wordladder"))
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andDo(MockMvcResultHandlers.print());
+                .andExpect(MockMvcResultMatchers.status().isOk());
+                //.andDo(MockMvcResultHandlers.print());
         mvc.perform(MockMvcRequestBuilders.get("/get_wordladder"))
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andDo(MockMvcResultHandlers.print());
+                .andExpect(MockMvcResultMatchers.status().isOk());
+                //.andDo(MockMvcResultHandlers.print());
         mvc.perform(MockMvcRequestBuilders.get("/getwordladder"))
-                .andExpect(MockMvcResultMatchers.status().isNotFound())
-                .andDo(MockMvcResultHandlers.print());
+                .andExpect(MockMvcResultMatchers.status().isNotFound());
+                //.andDo(MockMvcResultHandlers.print());
     }
 }
