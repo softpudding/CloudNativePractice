@@ -2,23 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5b28820-a7ae-4420-9b6c-ee5a03a4fe9b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Feign/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Feign/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Feign/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/java/wordladder/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/java/wordladder/Dict.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/java/wordladder/Ladder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/java/wordladder/LadderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/resources/dictionary/dictionary.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/resources/dictionary/smalldict1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/resources/dictionary/smalldict2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/resources/dictionary/smalldict3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/test/java/wordladder/ActuatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/test/java/wordladder/DictTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/test/java/wordladder/LadderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/test/java/wordladder/TestSuits.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder_1/wordladder.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/gateway/WordLadderGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/gateway/WordLadderGatewayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gateway/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gateway/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gateway/UriConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gateway/UriConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/gateway/WordLadderGatewayTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/gateway/WordLadderGatewayTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerConfig/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerConfig/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordladder/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../wordladder/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder/wordladder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordladder/wordladder.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gateway/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+            <state relative-caret-position="-609">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#937#938#0" expanded="true" />
@@ -44,10 +43,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/java/gateway/WordLadderGatewayTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="315">
+              <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -67,10 +87,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/test/java/gateway/ApplicationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/test/java/gateway/WordLadderGatewayTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/gateway/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/test/java/gateway/WordLadderGatewayTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -81,7 +102,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="729" />
     <option name="y" value="45" />
     <option name="width" value="1179" />
@@ -126,6 +147,22 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gateway" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WordLadder-Gateway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="Application.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="WordLadder-Gateway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -140,8 +177,8 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559230290024" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wordladder/pom.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559397557088" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -203,6 +240,8 @@
       <workItem from="1559223848113" duration="141000" />
       <workItem from="1559224275927" duration="5182000" />
       <workItem from="1559355943215" duration="3554000" />
+      <workItem from="1559393393778" duration="149000" />
+      <workItem from="1559397210297" duration="349000" />
     </task>
     <servers />
   </component>
@@ -239,13 +278,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8877000" />
+    <option name="totallyTimeSpent" value="9375000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2574657" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15602264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -254,7 +293,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32804233" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32804233" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -262,7 +301,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32804233" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32669982" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Run with VisualVM" order="13" />
@@ -285,27 +324,10 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/test/java/gateway/ApplicationTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/test/java/gateway/WordLadderGatewayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gateway/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+        <state relative-caret-position="-609">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#937#938#0" expanded="true" />
@@ -314,9 +336,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/java/gateway/WordLadderGatewayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -340,6 +410,19 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Gateway</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>11</last-edited>
@@ -354,6 +437,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

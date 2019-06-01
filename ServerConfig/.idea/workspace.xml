@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3446acc-5413-4052-ae67-f5add1ad4ec8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Feign/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Feign/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Feign/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gateway/.idea/Gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gateway/.idea/Gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gateway/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gateway/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gateway/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gateway/src/main/test/java/gateway/WordLadderGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Gateway/src/main/test/java/gateway/WordLadderGatewayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gateway/target/classes/gateway/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Gateway/target/classes/gateway/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gateway/target/classes/gateway/UriConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Gateway/target/classes/gateway/UriConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gateway/target/test-classes/gateway/WordLadderGatewayTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Gateway/target/test-classes/gateway/WordLadderGatewayTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wordladder/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordladder/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder/src/main/java/wordladder/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../wordladder/src/main/java/wordladder/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wordladder/src/main/java/wordladder/LadderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../wordladder/src/main/java/wordladder/LadderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wordladder/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../wordladder/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wordladder/wordladder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../wordladder/wordladder.iml" afterDir="false" />
     </list>
@@ -23,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="551">
+              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -36,8 +45,6 @@
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#114#115#0" expanded="true" />
-                <element signature="e#177#178#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,10 +87,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="y" value="21" />
-    <option name="width" value="1440" />
-    <option name="height" value="819" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="729" />
+    <option name="y" value="45" />
+    <option name="width" value="1179" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -91,6 +99,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,18 +141,10 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ServerConfig" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServerConfig" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -154,8 +156,8 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559392382954" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559397557020" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Gateway/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -207,17 +209,17 @@
       <updated>1559377445623</updated>
       <workItem from="1559377450449" duration="698000" />
       <workItem from="1559382123257" duration="8398000" />
+      <workItem from="1559393207806" duration="3334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9096000" />
+    <option name="totallyTimeSpent" value="12432000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25383994" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25788197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -225,12 +227,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3283582" />
-      <window_info anchor="bottom" id="Run with VisualVM" />
-      <window_info anchor="bottom" id="Debug with VisualVM" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3283582" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3283582" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -242,6 +241,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="14" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.3283582" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -258,21 +260,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/configserver/ConfigServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#114#115#0" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -280,10 +268,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/configserver/ConfigServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Gateway/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="551">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>
