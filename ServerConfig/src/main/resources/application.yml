@@ -7,6 +7,8 @@ spring:
         git:
           uri: https://github.com/llIllIllIlllIll/CloudNativePractice.git
           clone-on-start: true
+  application:
+    name: configserver
 security:
   user:
     password: 666666
