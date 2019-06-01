@@ -3,6 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="e5b28820-a7ae-4420-9b6c-ee5a03a4fe9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/java/wordladder/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/java/wordladder/Dict.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/java/wordladder/Ladder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/java/wordladder/LadderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/resources/dictionary/dictionary.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/resources/dictionary/smalldict1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/resources/dictionary/smalldict2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/main/resources/dictionary/smalldict3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/test/java/wordladder/ActuatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/test/java/wordladder/DictTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/test/java/wordladder/LadderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/src/test/java/wordladder/TestSuits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordladder_1/wordladder.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
