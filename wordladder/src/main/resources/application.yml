@@ -1,0 +1,6 @@
+cloud:
+  config:
+    uri: http://localhost:8888
+      profile: wordladder
+        label: master
+          name: SpringCloudConfigBySP
