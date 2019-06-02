@@ -33,3 +33,17 @@ steps:
       - mvn test
     when: 
       event: push
+  - name: run everything together
+    image: openjdk
+    image: maven
+    commands:
+      - cd ServerConfig  
+      - mvn spring-boot:run
+      - cd ../Gateway
+      - mvn spring-boot:run
+      - cd ../Feign
+      - mvn spring-boot:run
+      - cd ../wordladder
+      - mvn spring-boot:run
+    when: 
+      event: push
