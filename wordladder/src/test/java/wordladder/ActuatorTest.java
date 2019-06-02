@@ -17,8 +17,6 @@ import org.springframework.web.context.WebApplicationContext;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ActuatorTest {
-
-
     private MockMvc mockMvc; // 模拟MVC对象，通过MockMvcBuilders.webAppContextSetup(this.wac).build()初始化。
     @Autowired
     private WebApplicationContext wac; // 注入WebApplicationContext
