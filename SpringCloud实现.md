@@ -26,4 +26,4 @@ Word Ladder主体所在文件夹.
 
 #### Implementation
 运行ServerConfig，对接[配置文件](https://github.com/llIllIllIlllIll/SpringCloudConfig).<br>
-各服务启动时自动从localhost:8080去获取配置文件。
+各服务启动时自动从localhost:8888去获取配置文件。
