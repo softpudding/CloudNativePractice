@@ -25,25 +25,11 @@ steps:
       - mvn test
     when: 
       event: push
-  - name: test config server
+  - name: test ConfigServer
     image: openjdk
     image: maven
     commands:
-      - cd ServerConfig
+      - cd ServerConfig  
       - mvn test
-    when:
+    when: 
       event: push
-  - name: build all together
-    image: openjdk
-    image: maven
-    commands:
-      - cd ServerConfig
-      - mvn spring-boot:run
-      - cd ../Gateway
-      - mvn spring-boot:run
-      - cd ../Feign
-      - mvn spring-boot:run
-      - cd ../wordladder
-      - mvn spring-boot:run
-      - curl http://localhost:8080
-  
