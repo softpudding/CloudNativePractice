@@ -17,7 +17,7 @@ eureka.instance.lease-expiration-duration-in-seconds=90 定义服务失效的时
 当服务实例进行正常的关闭操作时，会触发一个服务下线的rest请求给Eureka Server ，告诉注册中心：”我要下线了“，服务端在接收请求后，将该服务置为下线（DOWN），并把下线时间传播出去（通知服务消费者）
 
 
-本服务运行在3000端口,将wordladder和Feign服务注册到Eureka上。
+本服务运行在3000端口,将Feign服务注册到Eureka上。
 
 ### 参考资料
 
