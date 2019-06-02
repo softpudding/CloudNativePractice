@@ -12,3 +12,5 @@ Gateway、Word Ladder、Feign都配置了Config Client。启动时会自动从lo
 2019-06-02 13:39:23.477  INFO 9096 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=wordladder, profiles=[dev], label=master, version=f036d0fe093c08cd1afd2ec2cb9e89f2a936b2ce, state=null
 2019-06-02 13:39:23.478  INFO 9096 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/llIllIllIlllIll/SpringCloudConfig/wordladder-dev.properties'}]}
 ```
+### 单元测试
+用mockmvc进行了测试，并且更新了.drone.yml，增加了新的CI环节。

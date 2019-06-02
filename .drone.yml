@@ -1,7 +1,7 @@
 kind: pipeline
 name: default
 steps:
-  - name: test
+  - name: test wordladder
     image: openjdk
     image: maven
     commands:
@@ -17,20 +17,33 @@ steps:
       - mvn test
     when: 
       event: push
-  - name: build
-    image: openjdk
-    image: maven
-    commands:
-      - cd wordladder
-      - mvn clean package
-    when:
-      event: push
-  - name: gateway
+  - name: test gateway
     image: openjdk
     image: maven
     commands:
       - cd Gateway  
-      - mvn clean package
+      - mvn test
     when: 
       event: push
+  - name: test config server
+    image: openjdk
+    image: maven
+    commands:
+      - cd ServerConfig
+      - mvn test
+    when:
+      event: push
+  - name: build all together
+    image: openjdk
+    image: maven
+    commands:
+      - cd ServerConfig
+      - mvn spring-boot:run
+      - cd ../Gateway
+      - mvn spring-boot:run
+      - cd ../Feign
+      - mvn spring-boot:run
+      - cd ../wordladder
+      - mvn spring-boot:run
+      - curl http://localhost:8080
   
