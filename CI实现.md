@@ -1,4 +1,4 @@
-## Milestones Ⅱ  CI实现
+## Milestones Ⅱ　CI实现
 
 ### 1. 搭建CI平台
 

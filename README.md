@@ -10,11 +10,16 @@
 
 ### Our Tech Stack
 
-Vue.js
+- Vue.js
+- Java
+- Spring Framework
 
-Java
+### Staged works
+### 1 Basic Idea
+                Nothing for now
+#### 2 CI
+Containierizing the CI platform.<br>
+Read [CI实现](CI实现.md) for details.
 
-Spring Framework
-
-### Basic Idea
-Nothing for now
+#### 3 Spring Cloud
+Read [Spring Cloud实现](SpringCloud实现.md) for details. 
