@@ -27,11 +27,13 @@ public class WordLadderGatewayTest {
                 .willReturn(aResponse()
                         .withBody("{\"headers\":{\"Router\":\"WordLadder-Gateway\"}}")
                         .withHeader("Content-Type", "application/json")));
+
         webClient
                 .get().uri("/")
                 .exchange()
                 .expectStatus().isOk()
                 .expectBody()
                 .jsonPath("$.headers.Router").isEqualTo("WordLadder-Gateway");
+
     }
 }

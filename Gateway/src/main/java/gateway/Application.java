@@ -48,6 +48,10 @@ public class Application {
                         .filters(f -> f.addRequestHeader("Router","WordLadder-Gateway"))
                         .uri(wordladderService+"/login"))
                 .route(p -> p
+                        .path("/actuator")
+                        .filters(f -> f.addRequestHeader("Router","WordLadder-Gateway"))
+                        .uri(wordladderService+"/actuator"))
+                .route(p -> p
                         .host("106.12.89.107:*")
                         .filters(f -> f.hystrix(config -> config.setName("cmd").setFallbackUri("forward:/error")))
                         .uri("http://106.12.89.107:8080"))
@@ -63,7 +67,7 @@ public class Application {
 @ConfigurationProperties
 class UriConfiguration {
 
-    private String wordladderService = "http://localhost:9000";
+    private String wordladderService = "http://localhost:8083";
 
     public String getWordladderService() {
         return wordladderService;

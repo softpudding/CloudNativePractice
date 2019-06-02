@@ -1,4 +1,4 @@
-package wordladder;
+package com.wordladder.feign;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -45,8 +45,8 @@ public class ControllerTest {
         mvc.perform(MockMvcRequestBuilders.get("/wordladder"))
                 .andExpect(MockMvcResultMatchers.status().isOk());
                 //.andDo(MockMvcResultHandlers.print());
-        mvc.perform(MockMvcRequestBuilders.get("/get_wordladder"))
-                .andExpect(MockMvcResultMatchers.status().isOk());
+        //mvc.perform(MockMvcRequestBuilders.get("/get_wordladder"))
+                //.andExpect(MockMvcResultMatchers.status().isOk());
                 //.andDo(MockMvcResultHandlers.print());
         mvc.perform(MockMvcRequestBuilders.get("/getwordladder"))
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
