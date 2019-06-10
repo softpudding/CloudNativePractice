@@ -18,10 +18,9 @@ public class OAuthController {
     String clientid = "7dbe5073bd774dfb4817";
     String clientsecret = "41b3421b2e3a96bd1294e3f3df7025b6b0a084bb";
     String url = "https://github.com/login/oauth/access_token";
-    String wlurl = "https://localhost:8080/oauthtoken";
-
+    String wlurl = "http://localhost:8083/oauthtoken";
     @RequestMapping("/oauthcallback")
-    void oAuthCallBack (@RequestParam(value = "code")String code) throws Exception{
+    String oAuthCallBack (@RequestParam(value = "code")String code) throws Exception{
         User u = new User(code);
         MultiValueMap<String,String> map = new LinkedMultiValueMap<String,String>();
         map.add("client_id",clientid);
@@ -33,10 +32,15 @@ public class OAuthController {
             //认证成功了
             map.clear();
             map.add("OAUTH-TOKEN",t.getAccess_token());
-            restTemplate.postForEntity(wlurl,map,String.class);
+            ResponseEntity<String> response = restTemplate.postForEntity(wlurl,map,String.class);
+            String s = response.getBody();
+            if(s!=null && s.equals(t.getAccess_token())){
+                return "认证成功";
+            }
         }
         else{
             throw new Exception("Failed In OAuth.");
         }
+        return "";
     }
 }
