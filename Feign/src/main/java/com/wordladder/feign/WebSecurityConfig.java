@@ -1,5 +1,5 @@
 package com.wordladder.feign;
-
+/*
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -33,11 +33,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public UserDetailsService userDetailsService() {
         UserDetails user =
                 User.withDefaultPasswordEncoder()
-                        .username("user")       /*with default username*/
-                        .password("123456")   /*with default password*/
+                        .username("user")       // with default username
+                        .password("123456")   // with default password
                         .roles("USER")
                         .build();
 
         return new InMemoryUserDetailsManager(user);
     }
 }
+*/
