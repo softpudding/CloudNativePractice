@@ -3,6 +3,7 @@ package softpudding;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -19,10 +20,12 @@ import javax.servlet.http.HttpServletResponse;
 public class OAuthController {
     @Autowired
     RestTemplate restTemplate;
-    String clientid = "7dbe5073bd774dfb4817";
-    String clientsecret = "41b3421b2e3a96bd1294e3f3df7025b6b0a084bb";
-    String url = "https://github.com/login/oauth/access_token";
-    String wlurl = "http://localhost:8083/oauthtoken";
+    @Value("${clientid}")
+    String clientid = "";
+    @Value("${clientsecret}")
+    String clientsecret = "";
+    @Value("${url}")
+    String url = "";
     @RequestMapping("/oauthcallback")
     void oAuthCallBack (@RequestParam(value = "code")String code,
                         HttpServletRequest request, HttpServletResponse response) throws Exception{
