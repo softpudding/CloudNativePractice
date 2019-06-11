@@ -1,0 +1,35 @@
+kind: pipeline
+name: default
+steps:
+  - name: test wordladder
+    image: openjdk
+    image: maven
+    commands:
+      - cd wordladder
+      - mvn test
+    when: 
+      event: push
+  - name: test feign
+    image: openjdk
+    image: maven
+    commands:
+      - cd Feign  
+      - mvn test
+    when: 
+      event: push
+  - name: test gateway
+    image: openjdk
+    image: maven
+    commands:
+      - cd Gateway  
+      - mvn test
+    when: 
+      event: push
+  - name: test ConfigServer
+    image: openjdk
+    image: maven
+    commands:
+      - cd ServerConfig  
+      - mvn test
+    when: 
+      event: push
