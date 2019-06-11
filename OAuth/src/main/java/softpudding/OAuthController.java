@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 @RestController
 public class OAuthController {
     @Autowired
@@ -20,7 +24,8 @@ public class OAuthController {
     String url = "https://github.com/login/oauth/access_token";
     String wlurl = "http://localhost:8083/oauthtoken";
     @RequestMapping("/oauthcallback")
-    String oAuthCallBack (@RequestParam(value = "code")String code) throws Exception{
+    void oAuthCallBack (@RequestParam(value = "code")String code,
+                        HttpServletRequest request, HttpServletResponse response) throws Exception{
         User u = new User(code);
         MultiValueMap<String,String> map = new LinkedMultiValueMap<String,String>();
         map.add("client_id",clientid);
@@ -29,18 +34,14 @@ public class OAuthController {
         ResponseEntity<Token> responseEntity = restTemplate.postForEntity(url,map,Token.class);
         Token t = responseEntity.getBody();
         if(t.getAccess_token()!=null){
-            //认证成功了
-            map.clear();
-            map.add("OAUTH-TOKEN",t.getAccess_token());
-            ResponseEntity<String> response = restTemplate.postForEntity(wlurl,map,String.class);
-            String s = response.getBody();
-            if(s!=null && s.equals(t.getAccess_token())){
-                return "认证成功";
-            }
+            //璁よ瘉鎴愬姛浜?
+            Cookie cookie = new Cookie("WLTOKEN",t.getAccess_token());
+            response.addCookie(cookie);
+            response.sendRedirect("http://localhost:8083/wordladder");
         }
-        else{
+        else {
             throw new Exception("Failed In OAuth.");
         }
-        return "";
     }
+
 }
