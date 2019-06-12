@@ -17,9 +17,11 @@ public class FeignController {
                          HttpServletRequest req, HttpServletResponse res) throws Exception{
         Cookie[] cookies = req.getCookies();
         boolean isLogin= false;
-        for(Cookie cookie : cookies){
-            if(cookie.getName().equals("WLTOKEN"))
-                isLogin = true;
+        if(cookies != null){
+            for(Cookie cookie : cookies){
+                if(cookie.getName().equals("WLTOKEN"))
+                    isLogin = true;
+            }
         }
         if(isLogin)
             return feignService.ladder(begin,end);
