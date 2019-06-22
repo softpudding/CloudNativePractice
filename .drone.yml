@@ -7,29 +7,29 @@ steps:
     commands:
       - cd wordladder
       - mvn test
-    when: 
+    when:
       event: push
   - name: test feign
     image: openjdk
     image: maven
     commands:
-      - cd Feign  
+      - cd Feign
       - mvn test
-    when: 
+    when:
       event: push
   - name: test gateway
     image: openjdk
     image: maven
     commands:
-      - cd Gateway  
+      - cd Gateway
       - mvn test
-    when: 
+    when:
       event: push
   - name: test ConfigServer
     image: openjdk
     image: maven
     commands:
-      - cd ServerConfig  
+      - cd ServerConfig
       - mvn test
-    when: 
+    when:
       event: push
