@@ -2,7 +2,9 @@ package wordladder;
 
 import java.util.*;
 
-public class Ladder {
+public class
+
+Ladder {
     private String begin,end; //head and tail in the word ladder
     private String result;
     //constructor
