@@ -10,7 +10,7 @@ steps:
     when:
       event: push
   - name: test feign
-    image: openjdk:8-jre-alpine
+    image: openjdk
     image: maven
     commands:
       - cd Feign
@@ -18,7 +18,7 @@ steps:
     when:
       event: push
   - name: test gateway
-    image: openjdk:8-jre-alpine
+    image: openjdk
     image: maven
     commands:
       - cd Gateway
@@ -26,7 +26,7 @@ steps:
     when:
       event: push
   - name: test ConfigServer
-    image: openjdk:8-jre-alpine
+    image: openjdk
     image: maven
     commands:
       - cd ServerConfig
