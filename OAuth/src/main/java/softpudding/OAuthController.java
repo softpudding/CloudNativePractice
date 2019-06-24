@@ -2,6 +2,7 @@ package softpudding;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -26,6 +27,8 @@ public class OAuthController {
     String clientsecret = "";
     @Value("${url}")
     String url = "";
+
+    @HystrixCommand(fallbackMethod = "oAuthCallBackFallback")
     @RequestMapping("/oauthcallback")
     void oAuthCallBack (@RequestParam(value = "code")String code,
                         HttpServletRequest request, HttpServletResponse response) throws Exception{
@@ -45,6 +48,12 @@ public class OAuthController {
         else {
             throw new Exception("Failed In OAuth.");
         }
+    }
+
+    void oAuthCallBackFallback(String code, HttpServletRequest request, HttpServletResponse response)
+    throws Exception{
+        System.out.println("OAuthCallBackFallBack: receive code:"+code);
+        response.sendRedirect("http://localhost:8080/");
     }
 
 }
