@@ -12,6 +12,12 @@ spring:
       password: 666666
       discovery:
         service-id: configserver
+    gateway:
+      default-filters:
+      - name: Hystrix
+        args:
+          name: fallbackCmd
+          fallbackUri: http://localhost:8083/
 
 #  设置注册中心地址
 eureka:

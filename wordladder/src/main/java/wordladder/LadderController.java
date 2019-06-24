@@ -1,6 +1,7 @@
 package wordladder;
 
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Value;
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpSession;
 @RestController
 public class LadderController {
     @RequestMapping("/get_wordladder")
+    @HystrixCommand(fallbackMethod = "ladderFallBack")
     public String ladder(@RequestParam(value="begin", defaultValue="code") String begin,@RequestParam(value="end", defaultValue="data") String end,HttpServletRequest req) {
         Dict dict = new Dict();
         if(begin.equals("") || end.equals("")){
@@ -25,12 +27,9 @@ public class LadderController {
             return ladder.getResult();
         }
     }
-
-    @RequestMapping(value="/getToken",method = RequestMethod.POST)
-    public void getToken(@RequestParam(value="token") String token,HttpServletRequest request){
-        HttpSession session =  request.getSession();
-        session.setAttribute("token",token);
-        System.out.println(token);
+    // hystrix method for ladder
+    public String ladderFallBack(String begin,String end,HttpServletRequest req){
+        return "WordladderFallback: "+begin+" "+end;
     }
 
 }
