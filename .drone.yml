@@ -2,7 +2,7 @@ kind: pipeline
 name: default
 steps:
   - name: test wordladder
-    image: openjdk
+    image: openjdk:8-jre-alpine
     image: maven
     commands:
       - cd wordladder
@@ -10,7 +10,7 @@ steps:
     when:
       event: push
   - name: test feign
-    image: openjdk
+    image: openjdk:8-jre-alpine
     image: maven
     commands:
       - cd Feign
@@ -18,7 +18,7 @@ steps:
     when:
       event: push
   - name: test gateway
-    image: openjdk
+    image: openjdk:8-jre-alpine
     image: maven
     commands:
       - cd Gateway
@@ -26,7 +26,7 @@ steps:
     when:
       event: push
   - name: test ConfigServer
-    image: openjdk
+    image: openjdk:8-jre-alpine
     image: maven
     commands:
       - cd ServerConfig
