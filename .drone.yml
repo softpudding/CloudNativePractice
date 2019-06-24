@@ -2,7 +2,7 @@ kind: pipeline
 name: default
 steps:
   - name: test wordladder
-    image: openjdk:8-jre-alpine
+    image: openjdk
     image: maven
     commands:
       - cd wordladder
