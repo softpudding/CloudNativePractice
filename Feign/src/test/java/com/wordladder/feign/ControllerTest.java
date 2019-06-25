@@ -21,6 +21,8 @@ import org.springframework.web.context.WebApplicationContext;
 public class ControllerTest {
     @Autowired
     private WebApplicationContext wac;
+    @Autowired
+    private FeignService feignService;
 
     private MockMvc mvc;
     private MockHttpSession session;
@@ -51,5 +53,13 @@ public class ControllerTest {
         mvc.perform(MockMvcRequestBuilders.get("/getwordladder"))
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
                 //.andDo(MockMvcResultHandlers.print());
+        //.andDo(MockMvcResultHandlers.print());
     }
+
+    @Test
+    public void test2(){
+        assert feignService.ladder("dog","cat").equals("FeignClientFallback: dog cat");
+    }
+
+
 }

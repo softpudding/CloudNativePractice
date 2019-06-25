@@ -14,6 +14,20 @@
 
 输入两个单词后点击提交按钮，会通过"/get_wordladder"访问另外启动的wordladder服务
 
+### 负载均衡
+
+给FeignService接口添加注解```@FeignClient(value = "wordladder-service",fallback = FeignClientFallback.class)``` ，其中 value 定位了注册的名为 "wordladder-service" 服务，fallback是定义了熔断机制。
+
+当注册了多个 "wordladder-service" 服务后，会轮流使用这几个服务
+
+例如，复制了一份 wordladder 项目（wordladder-copy），在返回结果中加了" 111"，服务运行在9001端口，另一个wordladder运行在9000端口，然后在页面中查询wordladder时会轮流得到有" 111"的结果和正常的结果。
+
+![](.\img\eureka.JPG)
+
+调用服务1 ![service1](.\img\result0.JPG)
+
+调用服务2![service2](.\img\result1.JPG)
+
 ### 参考资料
 
 [SpringCloud实战1-Eureka](https://www.cnblogs.com/huangjuncong/p/9020474.html)

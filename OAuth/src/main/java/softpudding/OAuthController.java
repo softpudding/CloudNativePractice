@@ -2,6 +2,8 @@ package softpudding;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -26,6 +28,10 @@ public class OAuthController {
     String clientsecret = "";
     @Value("${url}")
     String url = "";
+
+    @HystrixCommand(fallbackMethod = "oAuthCallBackFallback", commandProperties = {
+            @HystrixProperty(name="execution.isolation.thread.timeoutInMilliseconds",value="15000")
+    })
     @RequestMapping("/oauthcallback")
     void oAuthCallBack (@RequestParam(value = "code")String code,
                         HttpServletRequest request, HttpServletResponse response) throws Exception{
@@ -40,11 +46,17 @@ public class OAuthController {
             //璁よ瘉鎴愬姛浜?
             Cookie cookie = new Cookie("WLTOKEN",t.getAccess_token());
             response.addCookie(cookie);
-            response.sendRedirect("http://localhost:8083/wordladder");
+            response.sendRedirect("http://localhost:8080/wordladder");
         }
         else {
             throw new Exception("Failed In OAuth.");
         }
+    }
+
+    void oAuthCallBackFallback(String code, HttpServletRequest request, HttpServletResponse response)
+    throws Exception{
+        System.out.println("OAuthCallBackFallBack: receive code:"+code);
+        response.sendRedirect("http://localhost:8080/");
     }
 
 }
