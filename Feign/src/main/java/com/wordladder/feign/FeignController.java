@@ -27,7 +27,7 @@ public class FeignController {
             return feignService.ladder(begin,end);
         else
         {
-            res.sendRedirect("http://localhost:8083/home");
+            res.sendRedirect("http://localhost:8080/home");
             return "failed.";
         }
     }

@@ -46,7 +46,7 @@ public class OAuthController {
             //璁よ瘉鎴愬姛浜?
             Cookie cookie = new Cookie("WLTOKEN",t.getAccess_token());
             response.addCookie(cookie);
-            response.sendRedirect("http://localhost:8083/wordladder");
+            response.sendRedirect("http://localhost:8080/wordladder");
         }
         else {
             throw new Exception("Failed In OAuth.");

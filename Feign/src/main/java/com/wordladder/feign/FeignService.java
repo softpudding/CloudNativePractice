@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
-@FeignClient(value = "wordladder-service",url = "http://localhost:9000",fallback = FeignClientFallback.class)
+
+@FeignClient(value = "wordladder-service",fallback = FeignClientFallback.class)
 public interface FeignService {
     @RequestMapping("get_wordladder")
     String ladder(@RequestParam(value="begin", defaultValue="code") String begin,@RequestParam(value="end", defaultValue="data") String end);
