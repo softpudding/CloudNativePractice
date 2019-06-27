@@ -28,7 +28,11 @@ public class OAuthController {
     String clientsecret = "";
     @Value("${url}")
     String url = "";
-
+    /* 测试docker compose 时用的认证信息
+    String url = "https://github.com/login/oauth/access_token";
+    String clientid = "457db76ba9bac22b103a";
+    String clientsecret = "4378d356261f59a7098159301b11b6d49d3a44ba";
+    */
     @HystrixCommand(fallbackMethod = "oAuthCallBackFallback", commandProperties = {
             @HystrixProperty(name="execution.isolation.thread.timeoutInMilliseconds",value="15000")
     })

@@ -1,0 +1,14 @@
+version: '3'
+services:
+  config:
+    build: .
+    ports:
+      - "8888:8888"
+  oauth:
+    build: ../OAuth
+    ports:
+      - "9002:9002"
+    depends_on:
+      - config
+    restart:
+      always
