@@ -1,0 +1,34 @@
+version: '3'
+services:
+  eureka:
+    build: ./eureka
+    ports:
+      - "3000:3000"
+  gateway:
+    build: ./Gateway
+    ports:
+      - "8080:8080"
+  feign:
+    build: ./feign
+    ports:
+      - "8083:8083"
+  wordladder:
+    build: ./wordladder
+    ports:
+      - "9000:9000"
+  wordladder-copy:
+    build: ./wordladder-copy
+    ports:
+      - "9001:9001"
+  config:
+    build: ./ServerConfig
+    ports:
+      - "8888:8888"
+  oauth:
+    build: ./OAuth
+    ports:
+      - "9002:9002"
+    depends_on:
+      - config
+    restart:
+      always
