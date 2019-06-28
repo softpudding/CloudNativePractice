@@ -22,11 +22,11 @@
 
 例如，复制了一份 wordladder 项目（wordladder-copy），在返回结果中加了" 111"，服务运行在9001端口，另一个wordladder运行在9000端口，然后在页面中查询wordladder时会轮流得到有" 111"的结果和正常的结果。
 
-![](.\img\eureka.jpg)
+![](img\eureka.jpg)
 
-调用服务1 ![service1](.\img\result0.jpg)
+调用服务1 ![service1](img\result0.jpg)
 
-调用服务2![service2](.\img\result1.jpg)
+调用服务2![service2](img\result1.jpg)
 
 ### 参考资料
 
